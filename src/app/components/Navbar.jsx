@@ -1,9 +1,9 @@
 import React from 'react'
 import { logo } from './Assets'
 
-
 function Navbar() {
   return (
+    
     <div>
         <>
         {/* const [Active, setActive] = useState(false);
