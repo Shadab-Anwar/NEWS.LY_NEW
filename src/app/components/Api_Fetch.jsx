@@ -1,7 +1,11 @@
 "use client"
-import React, { useEffect } from 'react'
+import Error from 'next/error';
+import React, { useEffect, useState } from 'react'
+import NewsCard from './NewsCard';
 
 function Api_Fetch() {
+
+    const [news, setNews] = useState([]); // State to store news data
 
     useEffect(() => {
         const fetching = async () => {
@@ -12,22 +16,22 @@ function Api_Fetch() {
                     console.log("Not fetched the data");
                 }
                 const data = await res.json()
-                console.log(data);
-    
-                
+                // console.log(data);
+                // console.log(data.articles);
+                setNews(data.articles);
             } catch (error) {
-    
-                
-            }
-            
+                throw new Error ("Failed to fetch the data")
+            }   
         }
         fetching();  
     }, []);
 
   return (
-    <div>
-      
-    </div>
+    <div>{
+        news.map((Element)=>{
+                return <NewsCard author={Element.author} source={Element.source.name} title={Element.title} desc={Element.description} content={Element.content} pub={Element.publishedAt} url={Element.url} Image={Element.urlToImage} />
+        })
+}</div>
   )
 }
 

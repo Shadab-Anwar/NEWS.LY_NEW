@@ -4,7 +4,7 @@ import { logo } from './Assets'
 function Navbar() {
   return (
     
-    <div>
+    <div className='pb-14'>
         <>
         {/* const [Active, setActive] = useState(false);
         function onclickmenu (){

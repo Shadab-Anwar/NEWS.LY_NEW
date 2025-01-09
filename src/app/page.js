@@ -9,9 +9,11 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <NewsCard/>
-    <Footer/>
     <Api_Fetch/>
+    <Footer/>
+    {/* <NewsCard/> */}
+    
+    
     </>
   );
 }
