@@ -7,15 +7,15 @@ const NewsCard = (props) => {
   const Final_Image = Image ? Image : No_Image ;
   return (
     <>
-    <div className="pt-10 pb-[-40px]">
-    <div className=" max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden border border-gray-300">
+    <div className="pt-10 pb-[-40px] ">
+    <div className=" max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden border border-gray-300 hover:shadow-l hover:scale-105 transition-all ">
       <div className="flex ">
         <img
           className="w-[40%] h-[275px] rounded-xl p-2 object-cover "
           src={Final_Image} // Replace with the actual image URL
           alt="City Skyline"
         />
-        <div className="p-4 w-2/3">
+        <div className="p-4 w-2/3 ">
           <h2 className="text-lg font-bold text-gray-800">
             {title}
           </h2>
@@ -39,7 +39,9 @@ const NewsCard = (props) => {
         </div>
       </div>
     </div>
+    
     </div>
+    
  </>
   );
 };

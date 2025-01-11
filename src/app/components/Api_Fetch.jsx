@@ -6,6 +6,7 @@ import NewsCard from './NewsCard';
 function Api_Fetch() {
 
     const [news, setNews] = useState([]); // State to store news data
+    const [visible_news, setvisible_news] = useState(5); // State to load more news when the button is clicked
 
     useEffect(() => {
         const fetching = async () => {
@@ -32,15 +33,30 @@ function Api_Fetch() {
         }
         fetching();  
     }, []);
+    function Load_More() {
+        setvisible_news(visible_news + 5)
+    }
 
   return (
     <div>{
-        news.map((Element , Index)=>{
-
-            
+        news.slice(0 , visible_news).map((Element , Index)=>{
                 return <NewsCard key={Index} author={Element.author} source={Element.source.name} title={Element.title} desc={Element.description} content={Element.content} pub={Element.publishedAt} url={Element.url} Image={Element.urlToImage} />
         })
-}</div>
+        }
+        {
+            <div className='flex items-center justify-center pt-6'>
+                <button
+                   onClick={Load_More}
+                   className="px-8 py-1 bg-white text-black rounded hover:shadow-[0_1px_15px_rgba(0,0,0,0.6)] shadow-md transition-all text-sm"
+                 >
+                   Load More
+                 </button>
+            </div>
+        }
+
+
+
+</div>
   )
 }
 
