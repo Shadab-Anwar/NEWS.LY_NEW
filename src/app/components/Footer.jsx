@@ -4,6 +4,7 @@ import { logo, logo_dark } from './Assets'
 function Footer() {
   return (
     <>
+      
     <div className="foot bg-[#323232] text-[white] h-[140px] w-full flex py-5 mt-6">
         <div className="foot1 flex flex-row px-[14%] py-0">
         <div className="f1 flex flex-col">
