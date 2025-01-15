@@ -10,7 +10,7 @@ function Navbar() {
         function onclickmenu (){
             setActive(!Active)
         } */}
-        <div className="nav flex h-[70px] flex-row items-center shadow-[0px_1px_8px_grey] w-full fixed z-[2] bg-[white] overflow-hidden">
+        <div className="nav flex h-[70px] flex-row items-center shadow-[0px_1px_8px_grey] w-full fixed z-[2] bg-[white] overflow-hidden ">
           <div className="navigation">
           </div>
           <div className="logo flex h-[25px] pl-[45%]">
