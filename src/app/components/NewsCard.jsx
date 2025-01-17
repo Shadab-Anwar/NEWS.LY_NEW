@@ -7,7 +7,7 @@ const NewsCard = (props) => {
   const Final_Image = Image ? Image : No_Image ;
   return (
     <>
-    <div className="pt-10 pb-[-40px] ">
+    <div className="pt-10 pb-[-40px]">
     <div className=" max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden border border-gray-300 hover:shadow-l hover:scale-105 transition-all ">
       <div className="flex ">
         <img

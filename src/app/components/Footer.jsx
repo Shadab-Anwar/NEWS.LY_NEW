@@ -16,11 +16,11 @@ function Footer() {
             <div className="txt2 text-[13px] -mt-4"><a href="/" className='no-underline text-[white]'>Terms&Conditions </a><br />
             <a href="/" className='no-underline text-[white]'>Privacy Policies</a></div>
         </div>
-        <div className="f3 flex flex-row pl-[125%] align-items: end">
+        {/* <div className="f3 flex flex-row pl-[125%] align-items: end">
             <div className="fb"><a href="https://www.facebook.com/news" className='no-underline text-[white]'><img src="https://assets.inshorts.com/website_assets/images/facebook.png" alt="no " className='ics h-[60px] w-[60px] opacity-[80%] m-2 p-4' /></a></div>
             <div className="twi"><a href="https://twitter.com/ShadabAnwa27994" className='no-underline text-[white]'><img src="https://assets.inshorts.com/website_assets/images/twitter.png" alt="no " className='ics h-[60px] w-[60px] opacity-[80%] m-2 p-4' /></a></div>
             <div className="link"><a href="https://www.linkedin.com/in/shadab-anwar/" className='no-underline text-[white]'><img src="https://assets.inshorts.com/website_assets/images/linkedin.png" alt="no" className='ics h-[60px] w-[60px] opacity-[80%] m-2 p-4'/></a></div>
-        </div>
+        </div> */}
         </div>
         </div>
     </>
