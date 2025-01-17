@@ -39,9 +39,7 @@ const NewsCard = (props) => {
         </div>
       </div>
     </div>
-    
     </div>
-    
  </>
   );
 };
