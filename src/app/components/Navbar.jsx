@@ -1,5 +1,6 @@
 import React from 'react'
 import { logo } from './Assets'
+import { UserButton } from '@clerk/nextjs'
 
 function Navbar() {
   return (
@@ -15,6 +16,15 @@ function Navbar() {
               alt="no logo"
               className=' h-36 my-[-55px] ml-[-20px]'
             />
+            <div className="button ml-96 pl-60 mt-[-6px]">
+              <UserButton appearance={{
+          elements: {
+            userButtonAvatarBox: "w-10 h-10", // Customize avatar size
+            userButtonTrigger: "w-10 h-10", // Adjust trigger size if needed
+          },
+        }}/>
+             
+            </div>
           </div>
         </div>
        
